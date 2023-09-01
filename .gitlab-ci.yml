@@ -19,6 +19,8 @@ test1:
   script:
     - echo "Do a test here"
     - echo "For example run a test suite"
-    - echo "This should run on pull requests"
+
+on-pull-requests:
+  script: echo 'this should run on pull requests'
   only:
     - external_pull_requests
